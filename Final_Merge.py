@@ -77,7 +77,7 @@ def assign_rfm_segment(row):
 
     r_score, f_score, m_score = row['R_Score'], row['F_Score'], row['M_Score']
     if r_score >= 4 and f_score >= 4 and m_score >= 4: return 'Champions'
-    elif r_score >= 4 and f_score >= 4: return 'Potential Loyalists'
+    elif r_score >= 4 and f_score >= 4: return 'Active Loyalists'
     elif f_score >= 4: return 'Loyalists'
     elif r_score >= 4: return 'Recent Donors'
     elif m_score >= 4: return 'High Value Donors'
